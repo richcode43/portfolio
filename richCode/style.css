@@ -1,0 +1,745 @@
+                    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300&display=swap');
+                    * {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    a {
+                        text-decoration: none;
+                    }
+                    
+                    .colorText {
+                        color: #ffeb00;
+                    }
+                    
+                    .nav-holder {
+                        position: fixed !important;
+                        height: 50px;
+                        width: 100%;
+                        background-color: black;
+                        z-index: 2;
+                    }
+                    
+                    .nav-holder.scrolled {
+                        scroll-behavior: smooth;
+                        transition: ease-in .5s;
+                        width: 100%;
+                        margin-top: 0px;
+                        height: 60px;
+                        background-color: black;
+                        background-color: #2d3436;
+                        background-image: linear-gradient(315deg, #2d3436 0%, #161616 74%);
+                    }
+                    
+                    .nav-bar {
+                        width: 90%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin: auto;
+                        margin-top: 8px;
+                    }
+                    
+                    nav {
+                        position: absolute;
+                        width: 100%;
+                        height: 100vh;
+                        background-color: #000;
+                        z-index: 2;
+                        top: -100vh;
+                        left: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        transition: 1s;
+                    }
+                    
+                    .lite-text {
+                        color: #ffeb00;
+                        text-transform: uppercase;
+                        font-size: 200px;
+                        letter-spacing: 100px;
+                        opacity: 0.1;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        font-weight: 800;
+                        z-index: -1;
+                    }
+                    
+                    .close-icon {
+                        width: 25px;
+                        position: absolute;
+                        right: 80px;
+                        top: 50px;
+                        cursor: pointer;
+                        color: #ffeb00;
+                    }
+                    
+                    .menu-icon {
+                        width: 30px;
+                        cursor: pointer;
+                    }
+                    
+                    .logo img {
+                        width: 50px;
+                        cursor: pointer;
+                        margin: 35px;
+                    }
+                    
+                    .logo h2 {
+                        cursor: pointer;
+                        width: 50px;
+                        color: #ffeb00;
+                        font-family: 'Pacifico', cursive;
+                        font-size: 25px;
+                    }
+                    
+                    .logo i {
+                        color: #ffeb00;
+                        font-size: 20px;
+                        margin-right: 10px;
+                    }
+                    
+                    nav ul li {
+                        list-style: none;
+                        margin: 35px 0;
+                    }
+                    
+                    nav ul li a {
+                        text-decoration: none;
+                        font-size: 40px;
+                        color: white;
+                        padding: 10px;
+                        letter-spacing: 5px;
+                        position: relative;
+                    }
+                    
+                    nav ul li a::after {
+                        content: '';
+                        height: 3px;
+                        width: 0;
+                        background-color: #ffeb00;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transition: width 0.5s;
+                    }
+                    
+                    nav ul li a:hover::after {
+                        width: 100%;
+                    }
+                    
+                    .social-links {
+                        position: absolute;
+                        right: 30px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    
+                    .social-links i {
+                        width: 15px;
+                        color: white;
+                        display: block;
+                        margin: 30px 15px;
+                        border-bottom: 0;
+                        font-size: 20px;
+                    }
+                    
+                    .social-links i:hover {
+                        color: #ffeb00;
+                    }
+                    
+                    .hero-h1 {
+                        font-weight: 800;
+                        color: white;
+                        font-size: 80px;
+                    }
+                    
+                    .toggler-icon {
+                        width: 25px;
+                        height: 2px;
+                        background-color: #ffeb00;
+                        display: block;
+                        transition: all 0.2s;
+                    }
+                    
+                    .middle-bar {
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        width: 20px;
+                    }
+                    
+                    .bottom-bar {
+                        width: 10px;
+                    }
+                    
+                    .menu-icon:hover .middle-bar {
+                        width: 25px;
+                    }
+                    
+                    .menu-icon:hover .bottom-bar {
+                        width: 25px;
+                    }
+                    
+                    .link a:hover {
+                        color: white;
+                    }
+                    
+                    .home {
+                        background-color: #000000;
+                        height: 100vh;
+                    }
+                    
+                    .vertical-title {
+                        position: absolute;
+                        white-space: nowrap;
+                        width: 0;
+                        top: 15em;
+                        left: 50px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: .1em;
+                        -webkit-transform: rotate(-90deg);
+                        -ms-transform: rotate(-90deg);
+                        -o-transform: rotate(-90deg);
+                        transform: rotate(-90deg);
+                    }
+                    
+                    .vertical-title2 {
+                        position: absolute;
+                        white-space: nowrap;
+                        width: 0;
+                        top: 65em;
+                        left: 50px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: .1em;
+                        -webkit-transform: rotate(-90deg);
+                        -ms-transform: rotate(-90deg);
+                        -o-transform: rotate(-90deg);
+                        transform: rotate(-90deg);
+                    }
+                    
+                    .vertical-title span {
+                        display: block;
+                        float: right;
+                    }
+                    
+                    .contact-title {
+                        margin-top: -50px;
+                        font-family: montserrat, sans-serif;
+                        font-weight: 600;
+                        font-size: 30px;
+                        line-height: 1.166;
+                        color: white;
+                    }
+                    
+                    .contact-info a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    
+                    .title-uppercase {
+                        text-transform: uppercase;
+                        font-family: montserrat, sans-serif;
+                        font-weight: 600;
+                        font-size: 30px;
+                        line-height: 1.166;
+                        color: #fff;
+                    }
+                    
+                    .contact-info i {
+                        color: #fff;
+                        margin-right: 15px;
+                    }
+                    
+                    .contact-info a:hover {
+                        color: #ffeb00;
+                    }
+                    
+                    .text {
+                        margin-left: 10px;
+                        font-family: montserrat, sans-serif;
+                    }
+                    
+                    .text-color {
+                        color: #ffeb00;
+                    }
+                    
+                    .hero-paragraph {
+                        font-size: 20px;
+                        font-family: montserrat, sans-serif;
+                    }
+                    
+                    .about-title {
+                        text-transform: uppercase;
+                        font-family: montserrat, sans-serif;
+                        font-weight: 900;
+                        font-size: 30px;
+                        line-height: 1.166;
+                        margin-top: 10px;
+                        color: #fff;
+                    }
+                    
+                    .about-text {
+                        color: white;
+                        font-size: 16px;
+                        margin-top: 15px;
+                        font-weight: lighter;
+                        line-height: 2;
+                        font-family: montserrat, sans-serif;
+                    }
+                    
+                    .bi-emoji-smile-fill {
+                        font-size: 25px;
+                    }
+                    
+                    .cv-btn {
+                        padding: 10px;
+                        border: none;
+                        border-radius: 10px;
+                        font-weight: bold;
+                        font-size: 15px;
+                    }
+                    
+                    .cv-btn2 {
+                        padding: 10px;
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 15px;
+                        margin-left: 20px;
+                        background-color: #ffeb00;
+                    }
+                    
+                    .cv-btn2 a {
+                        text-decoration: none;
+                        color: black;
+                        font-weight: bold;
+                    }
+                    
+                    .cv-btn2 a:hover {
+                        color: black;
+                    }
+                    
+                    input,
+                    textarea {
+                        box-shadow: 0 0 25px rgba(87, 85, 85, 0.5);
+                    }
+                    
+                    .label {
+                        margin-left: 10px;
+                        font-family: montserrat, sans-serif;
+                    }
+                    
+                    .about {
+                        background-color: #272727;
+                        height: 100%;
+                        padding-bottom: 100px;
+                        padding-top: 100px;
+                    }
+                    
+                    .about-info {
+                        margin-left: 40px;
+                    }
+                    
+                    .about-img {
+                        width: 500px;
+                        margin-left: 70px;
+                        border-radius: 20px;
+                    }
+                    
+                    .skillset {
+                        height: 100vh;
+                        background-color: gainsboro;
+                        padding-bottom: 100px;
+                        padding-top: 100px;
+                    }
+                    
+                    .contacts {
+                        background-image: url('images/contact.jpg');
+                        background-size: cover;
+                        height: 100vh;
+                        padding-bottom: 0px;
+                        padding-top: 100px;
+                    }
+                    
+                    .btn {
+                        color: #fff !important;
+                        letter-spacing: 1px;
+                        font-size: 30px;
+                        display: inline-block;
+                        border: 0;
+                        border-radius: 0 !important;
+                        padding: 13px !important;
+                        background-color: #000 !important;
+                        transition: all .3s ease-out!important;
+                        font-family: montserrat, sans-serif;
+                    }
+                    
+                    .btn:hover {
+                        background-color: #ffeb00 !important;
+                        color: #000 !important;
+                    }
+                    /* progress bar  */
+                    
+                    .skills-info {
+                        height: auto;
+                        width: auto !important;
+                        margin: 30px;
+                    }
+                    
+                    .outer {
+                        height: 160px;
+                        width: 160px;
+                        border-radius: 50%;
+                        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+                        padding: 20px;
+                    }
+                    
+                    .inner {
+                        height: 120px;
+                        width: 120px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+                    }
+                    
+                    #number {
+                        font-weight: 800;
+                        color: #555;
+                    }
+                    
+                    circle {
+                        fill: none;
+                        stroke: url(#GradientColor);
+                        stroke-width: 20px;
+                        stroke-dasharray: 472;
+                        stroke-dashoffset: 472;
+                        animation: progress 2s linear forwards;
+                    }
+                    
+                    svg {
+                        position: absolute;
+                        top: 0;
+                        left: -4;
+                    }
+                    
+                    @keyframes progress {
+                        100% {
+                            stroke-dashoffset: 165;
+                        }
+                    }
+                    /* end of progress */
+                    /*  */
+                    /* services section */
+                    
+                    .services {
+                        background: rgba(0, 0, 0, 0.9);
+                        height: 100%;
+                        /* padding-top: 60px; */
+                        padding-bottom: 130px;
+                    }
+                    
+                    .service-title {
+                        text-align: center;
+                        color: white;
+                        margin-bottom: 80px;
+                        text-transform: uppercase;
+                        font-family: montserrat, sans-serif;
+                        font-weight: bold;
+                    }
+                    
+                    .services-info .icon-box {
+                        text-align: center;
+                        background: rgba(204, 204, 204, 0.1);
+                        padding: 80px 20px;
+                        transition: all ease-in-out 0.3s;
+                    }
+                    
+                    .services-info .icon-box .icon {
+                        margin: 0 auto;
+                        width: 64px;
+                        height: 64px;
+                        background: #ffeb00;
+                        border-radius: 5px;
+                        transition: all 0.3s ease-out 0s;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 20 px;
+                        transform-style: preserve-3d;
+                    }
+                    
+                    .services-info .icon-box .icon::before {
+                        position: absolute;
+                        content: "";
+                        left: -8px;
+                        top: -8px;
+                        height: 100%;
+                        width: 100%;
+                        background: rgba(255, 255, 255, 0.15);
+                        border-radius: 5px;
+                        transition: all 0.3s ease-out 0s;
+                        transform: translateZ(-1px);
+                    }
+                    
+                    .services-info .icon-box .icon i {
+                        font-size: 30px;
+                    }
+                    
+                    .services-info .icon-box h4 {
+                        font-weight: 700;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        font-size: 24px;
+                        color: white;
+                    }
+                    
+                    .services-info .icon-box p {
+                        line-height: 24px;
+                        font-size: 14px;
+                        margin-bottom: 0;
+                        color: white;
+                    }
+                    
+                    .services-info .icon-box:hover {
+                        background: #ffeb00;
+                        border-color: #ffeb00;
+                    }
+                    
+                    .services-info .icon-box:hover .icon {
+                        background: #fff;
+                    }
+                    
+                    .services-info .icon-box:hover .icon i {
+                        color: black;
+                    }
+                    
+                    .services-info .icon-box:hover .icon::before {
+                        background: #ffeb00;
+                        border: 2px solid black;
+                    }
+                    
+                    .services-info .icon-box:hover h4,
+                    .services-info .icon-box:hover p {
+                        color: black;
+                    }
+                    /* end of services section */
+                    /*  */
+                    /* portfolio section */
+                    
+                    .portfolio {
+                        height: 100%;
+                        padding-bottom: 100px;
+                    }
+                    
+                    .section-title {
+                        margin-top: 100px;
+                        margin-bottom: 70px;
+                    }
+                    
+                    .portfolio-title {
+                        font-weight: bold;
+                        font-family: montserrat, sans-serif;
+                        text-transform: uppercase;
+                    }
+                    
+                    .portfolio-paragraph {
+                        font-size: 20px;
+                        font-family: montserrat, sans-serif;
+                        font-weight: bold;
+                    }
+                    
+                    .project-title {
+                        margin-top: 30px;
+                    }
+                    
+                    .project-paragraph {
+                        font-family: montserrat, sans-serif;
+                        font-size: 20px;
+                        margin-top: 30px;
+                        margin-bottom: 40px;
+                    }
+                    
+                    .project-details {
+                        margin-top: -10px !important;
+                    }
+                    
+                    .project-link {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 20px;
+                        font-family: montserrat, sans-serif;
+                    }
+                    
+                    .project-link:hover {
+                        color: #ffeb00;
+                        font-weight: bold;
+                    }
+                    
+                    .lang {
+                        margin-top: 20px;
+                    }
+                    
+                    .lang span {
+                        margin-right: 20px;
+                        font-family: montserrat, sans-serif;
+                        border: 1px solid black;
+                        border-radius: 25px;
+                        padding: 10px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                    
+                    .lang span:hover {
+                        background-color: #ffeb00;
+                    }
+                    
+                    .currentDate {
+                        font-size: 20px;
+                        font-family: 'Pacifico', cursive;
+                        color: #ffeb00;
+                    }
+                    
+                    .footer-social a {
+                        margin-left: 10px;
+                        color: #ffeb00;
+                    }
+                    
+                    .arrow {
+                        margin-left: 50%;
+                        margin-top: 100px;
+                    }
+                    
+                    .bounce {
+                        -moz-animation: bounce 2s infinite;
+                        -webkit-animation: bounce 2s infinite;
+                        animation: bounce 2s infinite;
+                    }
+                    
+                    @keyframes bounce {
+                        0%,
+                        20%,
+                        50%,
+                        80%,
+                        100% {
+                            transform: translateY(0);
+                        }
+                        40% {
+                            transform: translateY(-30px);
+                        }
+                        60% {
+                            transform: translateY(-15px);
+                        }
+                    }
+                    
+                    @media(max-width: 1024px) {
+                        .social-links i {
+                            color: #ffeb00;
+                        }
+                        .hero-h1 {
+                            font-size: 70px;
+                            margin-top: 45%;
+                            margin-left: -20px;
+                        }
+                        .about,
+                        .contacts {
+                            height: 100%;
+                        }
+                        .about {
+                            background-color: #272727;
+                            padding-bottom: 100px;
+                            padding-top: 50px;
+                        }
+                        .about-info {
+                            margin-top: 50px !important;
+                            margin-left: 0px;
+                        }
+                        .about-img {
+                            margin-left: 20px;
+                        }
+                        .about-title {
+                            margin-top: -40px;
+                        }
+                        .services {
+                            padding-bottom: 130px;
+                        }
+                        .skillset {
+                            height: 100%;
+                        }
+                        .skills-info {
+                            margin: 15px;
+                        }
+                        .lang span {
+                            margin-right: 10px;
+                        }
+                        .arrow {
+                            margin-left: 45%;
+                            margin-top: 200px;
+                        }
+                    }
+                    
+                    @media(max-width:768px) {
+                        .close-icon {
+                            width: 45px;
+                            right: 20px;
+                            top: 50px;
+                        }
+                        .logo img h2 {
+                            width: 50px;
+                            cursor: pointer;
+                            margin-left: 5px;
+                            margin-top: 100px;
+                        }
+                        .arrow {
+                            margin-left: 40%;
+                            margin-top: 80px;
+                        }
+                        .lite-text {
+                            font-size: 100px;
+                            letter-spacing: 5px;
+                        }
+                        .hero-h1 {
+                            font-size: 40px;
+                            margin-top: 15%;
+                            margin-left: -20px;
+                        }
+                        .hero-paragraph {
+                            margin-left: -20px;
+                            font-size: 20px;
+                        }
+                        .hero-h1 span {
+                            font-size: 25px;
+                            font-weight: bold;
+                        }
+                        .about {
+                            height: 100%;
+                            padding: 50px 5px 50px 5px;
+                        }
+                        .skillset,
+                        .contacts {
+                            height: 100%;
+                            padding: 5px 5px;
+                        }
+                        .contact-title {
+                            margin-top: 50px;
+                        }
+                        .about-img {
+                            width: 100%;
+                            margin-left: 0px;
+                        }
+                        .about-info {
+                            margin-left: 0px;
+                        }
+                        .aboutImg-div {
+                            margin-top: 50px !important;
+                        }
+                        .services {
+                            padding-bottom: 60px;
+                        }
+                    }
