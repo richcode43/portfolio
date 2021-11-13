@@ -611,6 +611,10 @@
                         color: #ffeb00;
                     }
                     
+                    .footer-social a:hover {
+                        color: #ffeb00;
+                    }
+                    
                     .arrow {
                         margin-left: 50%;
                         margin-top: 100px;
@@ -741,5 +745,9 @@
                         }
                         .services {
                             padding-bottom: 60px;
+                        }
+                        .lang span {
+                            margin-right: 5px;
+                            font-size: 10px;
                         }
                     }
